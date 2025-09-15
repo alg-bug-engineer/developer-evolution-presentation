@@ -1,0 +1,128 @@
+/* --- 1. SETUP & FONT --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --bauhaus-black: #1a1a1a;
+  --bauhaus-white: #f5f5f5;
+  --bauhaus-red: #d94141;
+  --bauhaus-yellow: #f5d600;
+  --bauhaus-blue: #1d5fa3;
+  --font-primary: 'Poppins', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bauhaus-white);
+  color: var(--bauhaus-black);
+  overflow: hidden;
+}
+
+/* --- 2. SLIDE STRUCTURE --- */
+.slide {
+  width: 100vw;
+  height: 100vh;
+  padding: 4vw;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto; /* Header, Content, Footer */
+  grid-gap: 20px;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.slide-content {
+  grid-row: 2;
+  grid-column: 2 / 12;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content by default */
+}
+
+.slide-footer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: clamp(16px, 1.2vw, 20px);
+  color: var(--bauhaus-black);
+  opacity: 0.8;
+  z-index: 20;
+}
+
+
+/* --- 3. TYPOGRAPHY --- */
+h1 { 
+    font-size: clamp(32px, 5vw, 72px); 
+    font-weight: 700; 
+    line-height: 1.1; 
+    margin-bottom: 20px; 
+}
+h2 { 
+    font-size: clamp(24px, 2.5vw, 40px); 
+    font-weight: 600; 
+    margin-bottom: 25px; 
+    color: var(--bauhaus-blue); 
+}
+p, li { 
+    font-size: clamp(16px, 1.5vw, 24px); 
+    font-weight: 300; 
+    line-height: 1.8; 
+    max-width: 65ch; 
+}
+strong { font-weight: 600; }
+.subtitle {
+    font-size: clamp(18px, 1.8vw, 28px);
+    opacity: 0.8;
+    margin-top: 1rem;
+}
+
+ul { list-style: none; padding-left: 0; margin-top: 1rem; }
+li { padding-left: 2em; position: relative; margin-bottom: 1em; }
+li::before {
+  content: ''; width: 0.7em; height: 0.7em;
+  background-color: var(--bauhaus-red);
+  position: absolute; left: 0; top: 0.5em;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
+}
+
+/* --- 4. ICONS --- */
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 2;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+/* --- 5. DECORATIVE & LAYOUT ELEMENTS --- */
+.shape { position: absolute; z-index: 1; }
+.circle { border-radius: 50%; }
+.line { position: absolute; background-color: var(--bauhaus-black); z-index: 2; }
+
+.slide-image {
+  position: absolute;
+  object-fit: cover;
+  z-index: 5;
+  filter: grayscale(20%) contrast(110%);
+}
+
+.color-block {
+    position: absolute;
+    z-index: 2;
+}
+
+.text-highlight {
+    background-color: var(--bauhaus-yellow);
+    padding: 0.1em 0.5em;
+    font-weight: 600;
+}
