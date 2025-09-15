@@ -5,21 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>开发者进化论 - 12</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .architecture-bg {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .node {
+            position: absolute;
+            width: 1vw;
+            height: 1vw;
+            background: var(--bauhaus-blue);
+            border-radius: 50%;
+            transform: scale(0);
+            animation: scaleIn 0.6s forwards;
+        }
+        .connector {
+            position: absolute;
+            height: 1px;
+            background: var(--bauhaus-black);
+            opacity: 0.5;
+            transform-origin: left;
+            animation: scaleXIn 0.8s forwards;
+        }
+    </style>
 </head>
 <body>
-    <div class="slide" style="padding:0;">
-        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2070" alt="Architectural blueprint" class="slide-image" style="width: 100%; height: 100vh; top:0; left:0;">
+    <div class="slide">
+        <div class="architecture-bg">
+            <div class="node" style="top: 20vh; left: 20vw; animation-delay: 0.3s;"></div>
+            <div class="node" style="top: 30vh; left: 50vw; animation-delay: 0.4s;"></div>
+            <div class="node" style="top: 60vh; left: 35vw; animation-delay: 0.5s;"></div>
+            <div class="node" style="top: 70vh; left: 70vw; animation-delay: 0.6s;"></div>
+            <div class="connector" style="width: 30vw; top: calc(20vh + 0.5vw); left: 21vw; animation-delay: 0.7s;"></div>
+            <div class="connector" style="width: 28.28vw; top: calc(45vh + 0.5vw); left: 36vw; transform: rotate(45deg); animation-delay: 0.8s;"></div>
+             <div class="connector" style="width: 20vw; top: calc(30vh + 0.5vw); left: 51vw; animation-delay: 0.9s;"></div>
+        </div>
 
-        <main class="slide-content" style="grid-column: 2 / 8; z-index: 10;">
-            <div class="content-block">
-                <h2>第三阶段：规划时代</h2>
-                <h1>开发者是<br>“目标的设定者”</h1>
-                <p><strong>工作模式：</strong>我们只提出一个高层次的<strong class="text-highlight">“意图”（Intent）</strong>，例如：“构建一个支持用户认证和商品展示的电商网站原型”。AI将自主分解任务、制定计划、调用工具、执行并自我修正。</p>
-                <p><strong>核心价值：</strong>对最终目标的洞察力，以及构建与管理复杂智能系统的能力。</p>
-            </div>
+        <main class="slide-content" style="grid-column: 2 / 12; text-align: center; align-items: center;">
+            <h2>第三阶段：规划时代</h2>
+            <h1>开发者是<br>“目标的设定者”</h1>
+            <p style="max-width: 60ch;"><strong>工作模式：</strong>我们只提出一个高层次的<strong class="text-highlight">“意图”（Intent）</strong>，AI将自主分解任务、制定计划、调用工具、执行并自我修正。</p>
+            <p style="max-width: 60ch;"><strong>核心价值：</strong>对最终目标的洞察力，以及构建与管理复杂智能系统的能力。</p>
         </main>
         
-        <footer class="slide-footer" style="position:absolute; bottom: 0; width: 100%; padding: 4vw; color: var(--bauhaus-white);">
+        <footer class="slide-footer">
             <span class="title"></span>
             <span class="page-number">12/20</span>
         </footer>

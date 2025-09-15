@@ -5,21 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>开发者进化论 - 10</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .icon-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 1.5rem;
+        }
+        .icon-container svg {
+            width: 4vw;
+            height: 4vw;
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="slide" style="padding:0;">
-        <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Abstract network of information" class="slide-image" style="width: 100%; height: 100vh; top:0; left:0;">
-
-        <main class="slide-content" style="grid-column: 2 / 8; z-index: 10;">
-             <div class="content-block">
-                <h2>第一阶段：搜索时代</h2>
-                <h1>开发者是<br>“知识的连接者”</h1>
-                <p><strong>工作模式：</strong>遇到问题后，通过搜索引擎找到零散的知识片段（API用法、算法、错误解决方案），然后由大脑这个“中央处理器”进行筛选、理解和手动整合。</p>
-                <p><strong>核心价值：</strong>信息检索能力和整合能力。你知道去哪里找，以及你知道如何把它们拼起来。</p>
+    <div class="slide">
+        <main class="slide-content" style="grid-column: 2 / 7;">
+             <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <div>
+                    <h2>第一阶段：搜索时代</h2>
+                    <h1>知识的连接者</h1>
+                </div>
              </div>
+             <p><strong>工作模式：</strong>通过搜索引擎找到零散知识片段，由大脑进行筛选、理解和手动整合。</p>
+             <p><strong>核心价值：</strong>信息检索与整合能力。知道去哪里找，以及如何把它们拼起来。</p>
         </main>
-        
-        <footer class="slide-footer" style="position:absolute; bottom: 0; width: 100%; padding: 4vw; color: var(--bauhaus-white);">
+
+        <div style="position: absolute; right: 10vw; top: 50%; transform: translateY(-50%); width: 35vw;">
+            <div style="height: 2px; width: 100%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+            <div style="height: 2px; width: 60%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+            <div style="height: 2px; width: 80%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+            <div style="height: 2px; width: 75%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+        </div>
+
+        <footer class="slide-footer">
             <span class="title"></span>
             <span class="page-number">10/20</span>
         </footer>

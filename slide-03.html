@@ -5,26 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>开发者进化论 - 3</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- slide-03 specific styles --- */
+        .split-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            z-index: 1;
+        }
+        .split-background > div {
+            width: 50%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            opacity: 0.7; /* 3. 弱化背景图的整体透明度 */
+        }
+        /* 添加一个半透明的黑色遮罩层，进一步压暗背景 */
+        .split-background > div::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .left-side {
+            background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop');
+        }
+        .right-side {
+            background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop');
+        }
+
+        /* 1. 调整主体内容块的位置，整体上移 */
+        .slide-content-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+            padding-top: 10vh; /* 将内容上移 */
+            height: 100%;
+        }
+        .question-block {
+            padding: 2vw 4vw;
+            color: var(--bauhaus-white); /* 2. 将文字基础色设为白色 */
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* 为所有文字添加阴影以保证可读性 */
+        }
+        .question-block h1 {
+            color: var(--bauhaus-white);
+        }
+        .point-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 2rem;
+            text-align: left;
+            font-size: clamp(16px, 1.2vw, 22px);
+            line-height: 1.8;
+        }
+        .point-list li {
+            padding-left: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        .point-list li::before {
+            top: 0.4em;
+        }
+    </style>
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 12; text-align: center; justify-content: flex-start; padding-top: 10vh;">
-            <h2 style="color:black;">一个核心问题</h2>
-            <h1 style="margin-top: 2rem; line-height: 1.5;">
-                这场“魔法”是解放我们的<br>
-                <span class="text-emphasis-blue">神之恩赐</span>？
-            </h1>
-            <h1 style="line-height: 1.5;">
-                还是让我们退化的<br>
-                <span class="text-emphasis-red">温柔陷阱</span>？
-            </h1>
-            <p class="subtitle" style="margin-top: 5rem;">这不仅是工具的变革，更是开发者身份和价值的深刻重塑。</p>
+        <div class="split-background">
+            <div class="left-side"></div>
+            <div class="right-side"></div>
+        </div>
+
+        <main class="slide-content" style="grid-column: 1 / -1; z-index: 10;">
+            <h2 style="text-align: center; color: var(--bauhaus-white); text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">一个核心问题</h2>
+            
+            <div class="slide-content-split">
+                <div class="question-block">
+                    <h1 style="line-height: 1.5;">
+                        是一场深刻的<br>
+                        <span class="text-emphasis-blue">生产力革命</span>？
+                    </h1>
+                    <ul class="point-list">
+                        <li><strong>代码生成：</strong>从分钟级到秒级，极大提升开发效率。</li>
+                        <li><strong>模式复现：</strong>快速生成样板代码、设计模式，减少重复劳动。</li>
+                        <li><strong>知识拓展：</strong>瞬间跨越语言、框架障碍，降低学习门槛。</li>
+                    </ul>
+                </div>
+                <div class="question-block">
+                     <h1 style="line-height: 1.5;">
+                        还是一次隐蔽的<br>
+                        <span class="text-emphasis-red">能力退化</span>？
+                    </h1>
+                     <ul class="point-list">
+                        <li><strong>基础空洞化：</strong>知其然，但不知其所以然，底层原理被忽略。</li>
+                        <li><strong>调试黑盒化：</strong>面对AI生成的复杂代码，排错如“开盲盒”。</li>
+                        <li><strong>创造力平庸化：</strong>过度依赖AI，倾向于接受最“主流”的平庸方案。</li>
+                    </ul>
+                </div>
+            </div>
+
+             <p class="subtitle" style="position: absolute; width: 100%; left: 0; bottom: 8vh; text-align: center; color: var(--bauhaus-white); text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
+                这不仅是工具的变革，更是开发者身份和价值的深刻重塑。
+            </p>
         </main>
         
-        <div class="shape circle" style="border: 2px solid var(--bauhaus-black); width: 20vw; height: 20vw; top: 15%; left: 10%;"></div>
-        <div class="shape" style="background: var(--bauhaus-red); width: 10vw; height: 10vw; bottom: 10%; right: 20%;"></div>
-
-        <footer class="slide-footer">
+        <footer class="slide-footer" style="color: var(--bauhaus-white);">
             <span class="title"></span>
             <span class="page-number">03/20</span>
         </footer>

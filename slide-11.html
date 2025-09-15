@@ -5,21 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>开发者进化论 - 11</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .visual-frame {
+            position: absolute;
+            width: 70vw;
+            height: 65vh;
+            left: 15vw;
+            top: 17.5vh;
+            border: 2px solid var(--bauhaus-red);
+        }
+         .icon-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            gap: 1.5rem;
+        }
+        .icon-container svg {
+            width: 4vw;
+            height: 4vw;
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="slide" style="padding:0;">
-        <img src="https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Human interacting with a glowing digital interface" class="slide-image" style="width: 100%; height: 100vh; top:0; left:0;">
+    <div class="slide">
+        <div class="visual-frame"></div>
 
-        <main class="slide-content" style="grid-column: 6 / 12; text-align: right; align-items: flex-end; z-index: 10;">
-            <div class="content-block" style="border-left: none; border-right: 4px solid var(--bauhaus-red);">
-                <h2 style="color:var(--bauhaus-red);">第二阶段：回答时代</h2>
-                <h1>开发者是<br>“问题的定义者”</h1>
-                <p><strong>工作模式：</strong>将问题精准地描述成一个Prompt，直接从AI获取高度整合的答案，然后我们的主要工作变为验证、调试和集成。</p>
-                <p><strong>核心价值：</strong>提出一个好问题的能力，以及判断答案优劣的批判性思维。</p>
+        <main class="slide-content" style="grid-column: 3 / 11; text-align: center; align-items: center;">
+            <div class="icon-container">
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--bauhaus-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                 <div>
+                    <h2 style="color:var(--bauhaus-red);">第二阶段：回答时代</h2>
+                    <h1>问题的定义者</h1>
+                 </div>
             </div>
+            <p><strong>工作模式：</strong>将问题精准地描述成Prompt，直接从AI获取高度整合的答案，进行验证、调试和集成。</p>
+            <p><strong>核心价值：</strong>提出好问题的能力，以及判断答案优劣的批判性思维。</p>
         </main>
         
-        <footer class="slide-footer" style="position:absolute; bottom: 0; width: 100%; padding: 4vw; color: var(--bauhaus-white);">
+        <footer class="slide-footer">
             <span class="title"></span>
             <span class="page-number">11/20</span>
         </footer>
