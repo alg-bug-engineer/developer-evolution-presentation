@@ -8,20 +8,33 @@
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 8; justify-content: flex-start; padding-top: 5vh;">
+        <main class="slide-content" style="grid-column: 2 / 7; justify-content: flex-start; padding-top: 5vh;">
             <h2>解放：从“体力劳动”到“认知决策”</h2>
-            <p>AI的本质，是一场开发<strong class="text-highlight">认知负荷（Cognitive Load）</strong>的大转移。它让我们的精力从繁琐的细节中解放，聚焦于更高价值的创造。</p>
-            <ul>
-                <li><strong>架构层 (最高价值)</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">思考模块交互、系统扩展性。</p></li>
-                <li><strong>逻辑层 (核心创造)</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">设计核心业务逻辑和算法。</p></li>
-                <li style="opacity: 0.5;"><strong>模式层 (经验复现) - <span style="color:var(--bauhaus-red);">AI接管</span></strong><br><p style="font-size: 1.2vw;">实现设计模式，组织代码结构。</p></li>
-                <li style="opacity: 0.5;"><strong>语法层 (记忆劳动) - <span style="color:var(--bauhaus-red);">AI接管</span></strong><br><p style="font-size: 1.2vw;">记住API、具体写法和参数。</p></li>
+            <p>AI的本质，是一场开发<strong class="text-highlight">认知负荷（Cognitive Load）</strong>的大转移。它让我们从价值较低的底层工作中解放，聚焦于金字塔的顶端。</p>
+            <ul style="margin-top: 2rem;">
+                <li><strong>架构层 (Human Focus)</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">系统生死、模块交互、未来扩展</p></li>
+                <li><strong>逻辑层 (Human Focus)</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">核心算法、业务逻辑、创造力</p></li>
+                <li style="opacity: 0.5;"><strong>模式层 (AI Takeover)</strong><br><p style="font-size: 1.2vw;">设计模式、代码结构、经验复现</p></li>
+                <li style="opacity: 0.5;"><strong>语法层 (AI Takeover)</strong><br><p style="font-size: 1.2vw;">API、关键字、参数记忆</p></li>
             </ul>
         </main>
         
-        <img src="https://picsum.photos/id/119/1200/1600" alt="Abstract network lines" class="slide-image" style="width: 50vw; height: 100vh; top: 0; right: 0; opacity: 0.5;">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon shape" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="width: 10vw; height: 10vw; bottom: 10vh; right: 20vw; stroke: var(--bauhaus-blue); z-index: 15;">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3a1 1 0 0 1 .993 .883l.007 .117v1.5a1 1 0 0 1 -1.993 .117l-.007 -.117v-1.5a1 1 0 0 1 1 -1z" /><path d="M18.828 4.172a1 1 0 0 1 1.32 .083l.094 .1l.793 .792a1 1 0 0 1 -.083 1.32l-.094 .1l-.792 .793a1 1 0 0 1 -1.497 -1.32l.083 -.094l.792 -.793z" /><path d="M21 11a1 1 0 0 1 .117 1.993l-.117 .007h-1.5a1 1 0 0 1 -.117 -1.993l.117 -.007h1.5z" /><path d="M19.621 18.208a1 1 0 0 1 .083 1.32l-.083 .094l-.792 .793a1 1 0 0 1 -1.32 .083l-.094 -.083l-.793 -.792a1 1 0 0 1 1.32 -1.497l.094 .083l.793 .792z" /><path d="M12 18a1 1 0 0 1 .993 .883l.007 .117v1.5a1 1 0 0 1 -1.993 .117l-.007 -.117v-1.5a1 1 0 0 1 1 -1z" /><path d="M5.172 19.621a1 1 0 0 1 -1.32 -.083l-.094 -.1l-.793 -.792a1 1 0 0 1 .083 -1.32l.094 -.1l.792 -.793a1 1 0 0 1 1.497 1.32l-.083 .094l-.792 .793z" /><path d="M3 13a1 1 0 0 1 -.117 -1.993l.117 -.007h1.5a1 1 0 0 1 .117 1.993l-.117 .007h-1.5z" /><path d="M4.379 5.792a1 1 0 0 1 -.083 -1.32l.083 -.094l.792 -.793a1 1 0 0 1 1.32 -.083l.094 .083l.793 .792a1 1 0 0 1 -1.32 1.497l-.094 -.083l-.793 -.792z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+        <div class="cognitive-pyramid">
+            <div class="pyramid-level" id="level-architecture">
+                <h3>架构层 (最高价值)</h3>
+            </div>
+            <div class="pyramid-level" id="level-logic">
+                <h3>逻辑层 (核心创造)</h3>
+            </div>
+            <div class="pyramid-level" id="level-pattern">
+                <h3>模式层 (AI接管)</h3>
+                <p>组织代码结构</p>
+            </div>
+            <div class="pyramid-level" id="level-syntax">
+                <h3>语法层 (记忆劳动)</h3>
+                <p>记住API、具体写法</p>
+            </div>
+        </div>
 
         <footer class="slide-footer">
             <span class="title"></span>

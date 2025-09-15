@@ -8,21 +8,18 @@
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 12; display: grid; grid-template-columns: 1fr 1.1fr; gap: 4vw; align-items: center;">
-            <div>
-                <h2>之前：手动编码</h2>
-                <p>“并发下载10个文件，显示进度，完成后通知……”</p>
-                <p class="subtitle">这背后是查阅文档、处理线程同步、编写回调函数、小心翼翼地处理各种边界情况。熟练的程序员也需要花费不少时间。</p>
-            </div>
-            <div>
-                <h2 style="color: var(--bauhaus-red);">现在：“Vibe Coding”</h2>
-                <p>“用Python写一个函数，并发下载列表中的URL，并提供实时进度回调……”</p>
-                <p class="subtitle">我们向AI描述意图，一份90%可用的代码一分钟内便“一挥而就”。这，就是我们今天要讨论的起点。</p>
-            </div>
+        <main class="slide-content" style="grid-column: 2 / 12; display: flex; flex-direction: column; text-align: center; align-items: center;">
+             <h2 style="font-size: clamp(20px, 2vw, 32px);">一个熟悉的场景，一个尖锐的问题</h2>
+             <h1>当AI能完成90%的工作...</h1>
+             <p class="subtitle" style="max-width: 60ch;">我们剩下的<strong style="color:var(--bauhaus-red);">10%价值</strong>，还能支撑我们现在的<strong style="color:var(--bauhaus-red);">100%薪水</strong>吗？</p>
+             <p style="font-size: clamp(16px, 1.2vw, 22px); max-width: 75ch; margin-top: 3rem;">
+                过去，实现一个并发下载器需要数小时的精雕细琢。现在，我们向AI描述意图，一份几乎可用的代码在分钟内“一挥而就”。<br>这，就是我们今天要讨论的起点，也是我们危机的根源。
+             </p>
         </main>
         
-        <div class="line" style="height: 60vh; width: 2px; background-color:var(--bauhaus-yellow); top: 20vh; left: 50%;"></div>
-        <img src="https://picsum.photos/id/2/800/600" alt="Code on a screen" style="position:absolute; width:15vw; height: 15vw; bottom: 8vh; left:18vw; opacity: 0.5; z-index:1; clip-path: circle(50%);">
+        <div class="shape circle" style="background-color: var(--bauhaus-yellow); width: 25vw; height: 25vw; top: -5%; left: -5%;"></div>
+        <div class="shape" style="background-color: var(--bauhaus-blue); width: 10vw; height: 10vw; bottom: 10%; right: 15%;"></div>
+        <div class="line" style="height: 1px; width: 80vw; top: 55%; left: 10vw;"></div>
 
         <footer class="slide-footer">
             <span class="title"></span>

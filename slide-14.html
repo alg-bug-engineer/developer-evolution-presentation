@@ -8,14 +8,26 @@
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 9;">
-            <h2>法则一：软件经济学的逆转</h2>
-            <p>过去，项目的主要成本是<strong style="color:var(--bauhaus-red);">人力成本（开发者的工时）</strong>。</p>
-            <p>未来，很大一部分成本将转向<strong style="color:var(--bauhaus-blue);">计算成本（大模型的API调用费）</strong>。</p>
-            <p class="subtitle">性能优化增加了新的维度：如何用最少的API调用完成任务？<strong class="text-highlight">“Token经济学”</strong>将成为架构师的必修课。</p>
+        <main class="slide-content split-layout" style="grid-column: 2 / 12;">
+            <div>
+                <h2>法则一：软件经济学的逆转</h2>
+                <p>过去，项目的主要成本是<strong style="color:var(--bauhaus-red);">人力成本</strong>。</p>
+                <p>未来，很大一部分成本将转向<strong style="color:var(--bauhaus-blue);">计算成本</strong>。</p>
+                <p class="subtitle">性能优化增加了新的维度：<strong class="text-highlight">“Token经济学”</strong>将成为架构师的必修课。</p>
+            </div>
+            <div style="background: #1a1a1a; color: white; padding: 2vw; ">
+                <h3 style="margin-bottom: 1rem; font-size: 1.5vw; color: var(--bauhaus-yellow);">Token优化案例对比</h3>
+                <p style="font-size: 1.2vw; line-height: 1.6;">
+                    <strong>方案A (新手):</strong> “写个完整的电商后端...”<br>
+                    <span style="color:var(--bauhaus-red);">结果: 消耗150k Tokens，代码耦合。</span>
+                </p>
+                <p style="font-size: 1.2vw; line-height: 1.6; margin-top: 1rem;">
+                    <strong>方案B (专家):</strong> 逐模块拆解、定义接口、生成测试...<br>
+                    <span style="color: var(--bauhaus-blue);">结果: 消耗30k Tokens，代码清晰、高质量。</span>
+                </p>
+            </div>
         </main>
         
-        <img src="https://picsum.photos/id/219/1200/800" alt="Flowing data or currency" class="slide-image" style="width: 40vw; height: 100vh; top:0; right:0; opacity: 0.6;">
         <div class="line" style="width: 80vw; height: 1px; left: 10vw; bottom: 20vh;"></div>
 
         <footer class="slide-footer">
