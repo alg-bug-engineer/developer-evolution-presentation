@@ -3,36 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>开发者进化论 - 6</title>
+    <title>开发者进化论 - 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="slide">
-        <div class="slide-content" style="grid-column: 2 / 7; display: flex; justify-content: center; align-items: center; position: relative;">
-            <div style="width: 100%; height: 70vh; position: relative;">
-                <div class="line" style="width: 2px; height: 100%; top: 0; left: 15%; animation: none; transform: scaleX(1);"></div>
-                <div class="line" style="width: 4px; height: 100%; top: 0; left: 35%; animation: none; transform: scaleX(1);"></div>
-                
-                <div class="line" style="background-color: var(--bauhaus-red); width: 2px; height: 100%; top: 0; left: 55%; animation: none; transform: scaleX(1);"></div>
-                
-                <div class="line" style="width: 3px; height: 100%; top: 0; left: 75%; animation: none; transform: scaleX(1);"></div>
-                <div class="line" style="width: 2px; height: 100%; top: 0; left: 90%; animation: none; transform: scaleX(1);"></div>
-            </div>
-        </div>
-
-        <main class="slide-content" style="grid-column: 7 / 12;">
-            <h2 style="color:var(--bauhaus-red);">枷锁：智力与能力的“外包”风险</h2>
-            <p>然而，“认知外包”也伴随着巨大的风险，它可能在不知不觉中侵蚀我们的核心能力。</p>
-            <ul>
-                <li><strong>基础知识的“空洞化”</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">AI生成了快排，你却不知在“几乎有序”的场景下，插排性能是它的数倍。</p></li>
-                <li><strong>调试能力的“黑盒化”</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">AI生成的复杂代码偶发死锁，你花了3天调整Prompt，最后发现是它用错了同步原语——一个你本该在架构评审时就指出的问题。这不再是逻辑推理，而是<span class="text-highlight">“抽卡”</span>式的祈祷。</p></li>
-                <li><strong>创造力的“路径依赖”</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">AI倾向于提供最主流、最平庸的方案，它会扼杀那些更巧妙、更具创新性的“野路子”。</p></li>
+        <main class="slide-content" style="grid-column: 2 / 7; justify-content: flex-start; padding-top: 5vh;">
+            <h2>解放：从“体力劳动”到“认知决策”</h2>
+            <p>AI的本质，是一场开发<strong class="text-highlight">认知负荷（Cognitive Load）</strong>的大转移。它让我们从价值较低的底层工作中解放，聚焦于金字塔的顶端。</p>
+            <ul style="margin-top: 2rem;">
+                <li><strong>架构层 (Human Focus)</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">系统生死、模块交互、未来扩展</p></li>
+                <li><strong>逻辑层 (Human Focus)</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">核心算法、业务逻辑、创造力</p></li>
+                <li style="opacity: 0.5;"><strong>模式层 (AI Takeover)</strong><br><p style="font-size: 1.2vw;">设计模式、代码结构、经验复现</p></li>
+                <li style="opacity: 0.5;"><strong>语法层 (AI Takeover)</strong><br><p style="font-size: 1.2vw;">API、关键字、参数记忆</p></li>
             </ul>
         </main>
         
+        <div class="cognitive-pyramid">
+            <div class="pyramid-level" id="level-architecture">
+                <h3>架构层 (最高价值)</h3>
+            </div>
+            <div class="pyramid-level" id="level-logic">
+                <h3>逻辑层 (核心创造)</h3>
+            </div>
+            <div class="pyramid-level" id="level-pattern">
+                <h3>模式层 (AI接管)</h3>
+                <p>组织代码结构</p>
+            </div>
+            <div class="pyramid-level" id="level-syntax">
+                <h3>语法层 (记忆劳动)</h3>
+                <p>记住API、具体写法</p>
+            </div>
+        </div>
+
         <footer class="slide-footer">
             <span class="title"></span>
-            <span class="page-number">06/20</span>
+            <span class="page-number">05/20</span>
         </footer>
     </div>
     <script src="navigation.js"></script>

@@ -3,21 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>开发者进化论 - 11</title>
+    <title>开发者进化论 - 10</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .visual-frame {
-            position: absolute;
-            width: 70vw;
-            height: 65vh;
-            left: 15vw;
-            top: 17.5vh;
-            border: 2px solid var(--bauhaus-red);
-        }
-         .icon-container {
+        .icon-container {
             display: flex;
             align-items: center;
-            justify-content: center;
             margin-bottom: 2rem;
             gap: 1.5rem;
         }
@@ -30,23 +21,28 @@
 </head>
 <body>
     <div class="slide">
-        <div class="visual-frame"></div>
-
-        <main class="slide-content" style="grid-column: 3 / 11; text-align: center; align-items: center;">
-            <div class="icon-container">
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--bauhaus-red)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                 <div>
-                    <h2 style="color:var(--bauhaus-red);">第二阶段：回答时代</h2>
-                    <h1>问题的定义者</h1>
-                 </div>
-            </div>
-            <p><strong>工作模式：</strong>将问题精准地描述成Prompt，直接从AI获取高度整合的答案，进行验证、调试和集成。</p>
-            <p><strong>核心价值：</strong>提出好问题的能力，以及判断答案优劣的批判性思维。</p>
+        <main class="slide-content" style="grid-column: 2 / 7;">
+             <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <div>
+                    <h2>第一阶段：搜索时代</h2>
+                    <h1>知识的连接者</h1>
+                </div>
+             </div>
+             <p><strong>工作模式：</strong>通过搜索引擎找到零散知识片段，由大脑进行筛选、理解和手动整合。</p>
+             <p><strong>核心价值：</strong>信息检索与整合能力。知道去哪里找，以及如何把它们拼起来。</p>
         </main>
-        
+
+        <div style="position: absolute; right: 10vw; top: 50%; transform: translateY(-50%); width: 35vw;">
+            <div style="height: 2px; width: 100%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+            <div style="height: 2px; width: 60%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+            <div style="height: 2px; width: 80%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+            <div style="height: 2px; width: 75%; background-color: var(--bauhaus-black); margin-bottom: 15px; opacity: 0.6;"></div>
+        </div>
+
         <footer class="slide-footer">
             <span class="title"></span>
-            <span class="page-number">11/20</span>
+            <span class="page-number">10/20</span>
         </footer>
     </div>
     <script src="navigation.js"></script>

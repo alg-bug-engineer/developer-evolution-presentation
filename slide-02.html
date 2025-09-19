@@ -3,28 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>开发者进化论 - 2</title>
+    <title>开发者进化论 - 目录</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- 目录页专属样式 --- */
+        .agenda-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 4vh;
+        }
+        .agenda-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3vh;
+            font-size: clamp(20px, 2.2vw, 32px);
+            font-weight: 600;
+        }
+        .agenda-number {
+            font-size: clamp(18px, 2vw, 28px);
+            font-weight: 700;
+            color: var(--bauhaus-white);
+            background-color: var(--bauhaus-black);
+            width: 3.5vw;
+            height: 3.5vw;
+            min-width: 50px; /* 确保小屏幕上数字不会变形 */
+            min-height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2vw;
+            flex-shrink: 0; /* 防止圆形缩放 */
+        }
+        .agenda-item:nth-child(1) .agenda-number { background-color: var(--bauhaus-yellow); color: var(--bauhaus-black); }
+        .agenda-item:nth-child(2) .agenda-number { background-color: var(--bauhaus-blue); }
+        .agenda-item:nth-child(3) .agenda-number { background-color: var(--bauhaus-red); }
+        
+        .agenda-text-main {
+            color: var(--bauhaus-black);
+        }
+        .agenda-text-sub {
+            font-size: clamp(14px, 1.2vw, 20px);
+            opacity: 0.7;
+            margin-top: 0.5vh;
+            font-weight: 400;
+        }
+    </style>
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 12; display: flex; flex-direction: column; text-align: center; align-items: center;">
-             <h2 style="font-size: clamp(20px, 2vw, 32px);">一个熟悉的场景，一个尖锐的问题</h2>
-             <h1>当AI能完成90%的工作...</h1>
-             <p class="subtitle" style="max-width: 60ch;">我们剩下的<strong style="color:var(--bauhaus-red);">10%价值</strong>，还能支撑我们现在的<strong style="color:var(--bauhaus-red);">100%薪水</strong>吗？</p>
-             <p style="font-size: clamp(16px, 1.2vw, 22px); max-width: 75ch; margin-top: 3rem;">
-                过去，实现一个并发下载器需要数小时的精雕细琢。现在，我们向AI描述意图，一份几乎可用的代码在分钟内“一挥而就”。<br>这，就是我们今天要讨论的起点，也是我们危机的根源。
-             </p>
+        <main class="slide-content" style="grid-column: 3 / 10;">
+            <h1 style="font-size: clamp(40px, 5vw, 80px);">分享大纲</h1>
+            
+            <ul class="agenda-list">
+                <li class="agenda-item" style="animation-delay: 0.3s;">
+                    <div class="agenda-number">01</div>
+                    <div>
+                        <div class="agenda-text-main">当下的冲击</div>
+                        <div class="agenda-text-sub">解放与枷锁：生产力悖论</div>
+                    </div>
+                </li>
+                <li class="agenda-item" style="animation-delay: 0.5s;">
+                    <div class="agenda-number">02</div>
+                    <div>
+                        <div class="agenda-text-main">核心演进</div>
+                        <div class="agenda-text-sub">人机协作的三大范式</div>
+                    </div>
+                </li>
+                <li class="agenda-item" style="animation-delay: 0.7s;">
+                    <div class="agenda-number">03</div>
+                    <div>
+                        <div class="agenda-text-main">未来之路</div>
+                        <div class="agenda-text-sub">新范式下的生存法则</div>
+                    </div>
+                </li>
+            </ul>
         </main>
         
-        <div class="shape circle" style="background-color: var(--bauhaus-yellow); width: 25vw; height: 25vw; top: -5%; left: -5%;"></div>
-        <div class="shape" style="background-color: var(--bauhaus-blue); width: 10vw; height: 10vw; bottom: 10%; right: 15%;"></div>
-        <div class="line" style="height: 1px; width: 80vw; top: 55%; left: 10vw;"></div>
+        <div class="line" style="width: 1px; height: 70vh; top: 15vh; left: 75vw;"></div>
+        <div class="shape circle" style="background-color: var(--bauhaus-red); opacity: 0.8; width: 15vw; height: 15vw; bottom: 5%; left: 5%;"></div>
+
 
         <footer class="slide-footer">
             <span class="title"></span>
-            <span class="page-number">02/20</span>
-        </footer>
+            <span class="page-number">02/21</span> </footer>
     </div>
     <script src="navigation.js"></script>
 </body>

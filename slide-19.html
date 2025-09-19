@@ -3,19 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>开发者进化论 - 19</title>
+    <title>开发者进化论 - 18</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- slide-18 specific styles --- */
+        .evolution-path {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+        }
+        .evolution-card {
+            border: 2px solid var(--bauhaus-black);
+            padding: 1.5rem 2rem;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        .evolution-card .icon {
+            width: 3vw;
+            height: 3vw;
+            flex-shrink: 0;
+        }
+        .evolution-card h3 {
+            font-size: 1.8vw;
+            margin: 0;
+            font-weight: 700;
+        }
+        .evolution-card p {
+            font-size: 1.2vw;
+            margin: 0;
+            opacity: 0.8;
+        }
+        .arrow-down {
+            width: 2vw;
+            height: 2vw;
+            stroke: var(--bauhaus-black);
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 12; text-align: center;">
-            <p style="font-size: clamp(18px, 1.8vw, 28px);">当代码变得像流水和空气一样廉价时……</p>
-            <h1 style="font-size: clamp(40px, 5.5vw, 80px); color: var(--bauhaus-blue);">我们真正不可替代的价值，<br>究竟是什么？</h1>
+        <main class="slide-content" style="grid-column: 2 / 12; display: flex; flex-direction: column; align-items: center;">
+            <h1>我们的进化之路</h1>
+            
+            <div class="evolution-path">
+                <div class="evolution-card">
+                    <svg xmlns="http://www.w.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    <div>
+                        <h3>知识的<strong style="color:var(--bauhaus-black);">连接者</strong></h3>
+                        <p>搜索时代 · 信息检索与整合</p>
+                    </div>
+                </div>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+
+                <div class="evolution-card" style="border-color: var(--bauhaus-red);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--bauhaus-red)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    <div>
+                        <h3>问题的<strong style="color:var(--bauhaus-red);">定义者</strong></h3>
+                        <p>回答时代 · 提出好问题，批判性思维</p>
+                    </div>
+                </div>
+                <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+
+                <div class="evolution-card" style="border-color: var(--bauhaus-blue);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="var(--bauhaus-blue)" stroke-width="2"><path d="M10.2 3.9c.4 -.1 .8 -.1 1.2 0l7.2 2.5c.4 .2 .7 .5 .7 .9v7.2c0 .4 -.2 .7 -.5 .9l-7.2 2.5c-.4 .2 -.8 .2 -1.2 0l-7.2 -2.5c-.4 -.2 -.7 -.5 -.7 -.9v-7.2c0 -.4 .2 -.7 .5 .9l7.2 -2.5z"></path><path d="M10.2 16.9c.4 .2 .8 .2 1.2 0l7.2 -2.5c.4 -.2 .7 -.5 .7 -.9"></path><path d="M3.5 9.4c0 .4 .2 .7 .5 .9l7.2 2.5c.4 .2 .8 .2 1.2 0"></path><path d="M12 21v-8.5"></path></svg>
+                    <div>
+                        <h3>目标的<strong style="color:var(--bauhaus-blue);">设定者与编排者</strong></h3>
+                        <p>规划时代 · 洞察力与系统构建能力</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; border-top: 3px solid var(--bauhaus-yellow); padding-top: 1.5rem; margin-top: 3rem;">
+                <p style="font-size: 1.5vw; max-width: 100%; font-weight: 600;">我们的角色并未被削弱，而是在不断地“提纯”与“升维”。</p>
+            </div>
         </main>
-        
+
         <footer class="slide-footer">
             <span class="title"></span>
-            <span class="page-number">19/20</span>
+            <span class="page-number">18/20</span>
         </footer>
     </div>
     <script src="navigation.js"></script>

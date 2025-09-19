@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>开发者进化论 - 7</title>
+    <title>开发者进化论 - 6</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="slide">
-        <main class="slide-content" style="grid-column: 2 / 8; z-index: 10;">
-            <h1>35岁危机新解</h1>
-            <h2 style="color: black;">是“缓解”还是“形态转变”？</h2>
-            <p>我们一直在讨论的35岁危机，本质是“性价比”危机：精力下降，学习曲线变陡，而薪资期望在升高。AI的出现，非常有趣地改变了这个等式。</p>
-        </main>
-        
-        <div style="position: absolute; top: 0; right: 0; width: 38vw; height: 100vh; z-index: 1;">
-            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955" alt="Upward path" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(20%);">
+        <div class="slide-content" style="grid-column: 2 / 7; display: flex; justify-content: center; align-items: center; position: relative;">
+            <div style="width: 100%; height: 70vh; position: relative;">
+                <div class="line" style="width: 2px; height: 100%; top: 0; left: 15%; animation: none; transform: scaleX(1);"></div>
+                <div class="line" style="width: 4px; height: 100%; top: 0; left: 35%; animation: none; transform: scaleX(1);"></div>
+                
+                <div class="line" style="background-color: var(--bauhaus-red); width: 2px; height: 100%; top: 0; left: 55%; animation: none; transform: scaleX(1);"></div>
+                
+                <div class="line" style="width: 3px; height: 100%; top: 0; left: 75%; animation: none; transform: scaleX(1);"></div>
+                <div class="line" style="width: 2px; height: 100%; top: 0; left: 90%; animation: none; transform: scaleX(1);"></div>
+            </div>
         </div>
 
-        <div class="line" style="width: 2px; height: 100vh; top: 0; left: 62vw; z-index: 5; animation: none; transform: scaleX(1);"></div>
-        <div class="line" style="background-color: var(--bauhaus-red); width: 2px; height: 100vh; top: 0; left: calc(62vw + 10px); z-index: 5; animation: none; transform: scaleX(1);"></div>
+        <main class="slide-content" style="grid-column: 7 / 12;">
+            <h2 style="color:var(--bauhaus-red);">枷锁：智力与能力的“外包”风险</h2>
+            <p>然而，“认知外包”也伴随着巨大的风险，它可能在不知不觉中侵蚀我们的核心能力。</p>
+            <ul>
+                <li><strong>基础知识的“空洞化”</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">AI生成了快排，你却不知在“几乎有序”的场景下，插排性能是它的数倍。</p></li>
+                <li><strong>调试能力的“黑盒化”</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">AI生成的复杂代码偶发死锁，你花了3天调整Prompt，最后发现是它用错了同步原语——一个你本该在架构评审时就指出的问题。这不再是逻辑推理，而是<span class="text-highlight">“抽卡”</span>式的祈祷。</p></li>
+                <li><strong>创造力的“路径依赖”</strong><br><p style="font-size: 1.2vw; opacity: 0.8;">AI倾向于提供最主流、最平庸的方案，它会扼杀那些更巧妙、更具创新性的“野路子”。</p></li>
+            </ul>
+        </main>
         
-        <footer class="slide-footer" style="z-index: 20;">
+        <footer class="slide-footer">
             <span class="title"></span>
-            <span class="page-number">07/20</span>
+            <span class="page-number">06/20</span>
         </footer>
     </div>
     <script src="navigation.js"></script>
